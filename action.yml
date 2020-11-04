@@ -25,6 +25,11 @@ inputs:
     description: '[Optional] commit message for the output repository. ORIGIN_COMMIT is replaced by the URL@commit in the origin repo'
     default: 'Update from ORIGIN_COMMIT'
     required: false
+
+outputs:
+  DESTINATION_CLONED_DIRECTORY:
+    description: Directory where the destination directory had been cloned
+
 runs:
   using: 'docker'
   image: 'Dockerfile'

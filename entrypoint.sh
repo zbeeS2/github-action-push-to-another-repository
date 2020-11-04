@@ -19,6 +19,8 @@ fi
 
 CLONE_DIR=$(mktemp -d)
 
+echo "::set-output name=DESTINATION_CLONED_DIRECTORY::$CLONE_DIR"
+
 echo "Cloning destination git repository"
 # Setup git
 git config --global user.email "$USER_EMAIL"
