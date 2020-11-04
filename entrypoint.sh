@@ -19,7 +19,7 @@ fi
 
 CLONE_DIR=$(mktemp -d)
 
-echo "::set-output name=DESTINATION_CLONED_DIRECTORY::$CLONE_DIR"
+echo "DESTINATION_CLONED_DIRECTORY=$CLONE_DIR" >> $GITHUB_ENV
 
 echo "Cloning destination git repository"
 # Setup git
