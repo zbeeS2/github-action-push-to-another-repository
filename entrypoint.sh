@@ -57,8 +57,8 @@ mv "$CLONE_DIR/.git" "$TEMP_DIR/.git"
 # $TARGET_DIRECTORY is '' by default
 ABSOLUTE_TARGET_DIRECTORY="$CLONE_DIR/$TARGET_DIRECTORY/"
 
-# zbeeS2) 조금만 덜 폭력적이게 만듬 ㅎ;;
-echo "[+] Deleting $ABSOLUTE_TARGET_DIRECTORY"
+# zbeeS2) 조금만 덜 폭력적이게 해줌 ㅎ;;
+# echo "[+] Deleting $ABSOLUTE_TARGET_DIRECTORY"
 # rm -rf "$ABSOLUTE_TARGET_DIRECTORY"
 
 echo "[+] Creating (now empty) $ABSOLUTE_TARGET_DIRECTORY"
